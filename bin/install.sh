@@ -71,7 +71,7 @@ EOF
 
 # @TODO Re-enable the 'production' branch once we've merged master into production
 #echo -e "\n________________________________________\n"
-#echo -e "Which version/branch of Screenly OSE would you like to install:\n"
+#echo -e "Which version/branch of SOSE would you like to install:\n"
 #echo " Press (1) for the Production branch, which is the latest stable."
 #echo " Press (2) for the Development/Master branch, which has the latest features and fixes, but things may break."
 #echo ""
@@ -90,7 +90,7 @@ EOF
 export DOCKER_TAG="latest"
 export BRANCH="master"
 
-  echo && read -p "Do you want Anthias to manage your network? This is recommended for most users because this adds features to manage your network. (Y/n)" -n 1 -r -s NETWORK && echo
+  echo && read -p "Do you want this device to manage your network? This is recommended for most users because this adds features to manage your network. (Y/n)" -n 1 -r -s NETWORK && echo
 
   echo && read -p "Would you like to perform a full system upgrade as well? (y/N)" -n 1 -r -s UPGRADE && echo
   if [ "$UPGRADE" != 'y' ]; then
@@ -132,10 +132,10 @@ fi
 if [ -z "${REPOSITORY}" ]; then
   if [ "$WEB_UPGRADE" = false ]; then
     set -x
-    REPOSITORY=${1:-https://github.com/screenly/anthias.git}
+    REPOSITORY=${1:-https://github.com/vateam1/sosev4-2.git}
   else
     set -e
-    REPOSITORY=https://github.com/screenly/anthias.git
+    REPOSITORY=https://github.com/vateam1/sosev4-2.git
   fi
 fi
 
@@ -172,7 +172,7 @@ fi
 
 # Install Ansible from requirements file.
 if [ "$BRANCH" = "master" ]; then
-    ANSIBLE_VERSION=$(curl -s https://raw.githubusercontent.com/screenly/anthias/$BRANCH/requirements/requirements.host.txt | grep ansible)
+    ANSIBLE_VERSION=$(curl -s https://raw.githubusercontent.com/vateam1/sosev4-2/$BRANCH/requirements/requirements.host.txt | grep ansible)
 else
     ANSIBLE_VERSION=ansible==2.8.8
 fi

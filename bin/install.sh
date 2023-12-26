@@ -62,7 +62,7 @@ EOF
   # Reset color
   tput sgr 0
 
-  echo -e "Anthias requires a dedicated Raspberry Pi / SD card.\nYou will not be able to use the regular desktop environment once installed.\n"
+  echo -e "This device requires a dedicated Raspberry Pi / SD card.\nYou will not be able to use the regular desktop environment once installed.\n"
   read -p "Do you still want to continue? (y/N)" -n 1 -r -s INSTALL
   if [ "$INSTALL" != 'y' ]; then
     echo

@@ -33,7 +33,7 @@ if [ "$WEB_UPGRADE" = false ]; then
 
   # Make sure the command is launched interactive.
   if ! [ -t 0  ]; then
-    echo -e "Detected old installation command. Please use:\n$ bash <(curl -sL https://install-anthias.srly.io)"
+    echo -e "Detected old installation command. Please use:\n$ bash <(curl -sL https://raw.githubusercontent.com/vateam1/sosev4-2/main/bin/install.sh)"
     exit 1
   fi
 
@@ -46,7 +46,7 @@ if [ "$WEB_UPGRADE" = false ]; then
 
   cat << EOF
 
-       d8888            888     888
+       d1111            888     888
       d88888            888     888       888
      d88P888            888     888
     d88P 888  88888b.   888888  88888b.   888   8888b.   .d8888b

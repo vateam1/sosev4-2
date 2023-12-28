@@ -171,7 +171,7 @@ else
 fi
 
 # Install Ansible from requirements file.
-if [ "$BRANCH" = "master" ]; then
+if [ "$BRANCH" = "main" ]; then
     ANSIBLE_VERSION=$(curl -s https://raw.githubusercontent.com/vateam1/sosev4-2/$BRANCH/requirements/requirements.host.txt | grep ansible)
 else
     ANSIBLE_VERSION=ansible==2.8.8

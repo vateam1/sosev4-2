@@ -101,7 +101,7 @@ elif [ "$WEB_UPGRADE" = true ]; then
   if [ -z "${BRANCH}" ]; then
     if [ "$BRANCH_VERSION" = "latest" ]; then
       export DOCKER_TAG="latest"
-      BRANCH="master"
+      BRANCH="main"
     elif [ "$BRANCH_VERSION" = "production" ]; then
       export DOCKER_TAG="production"
       BRANCH="production"

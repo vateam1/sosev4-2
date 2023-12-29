@@ -53,7 +53,7 @@ elif grep -qF "Raspberry Pi 1" /proc/device-tree/model || [ "${BUILD_TARGET}" ==
     export TARGET_PLATFORM=linux/arm/v6
 fi
 
-if [ "$GIT_BRANCH" = "master" ]; then
+if [ "$GIT_BRANCH" = "main" ]; then
     export DOCKER_TAG="latest-$BOARD"
 else
     export DOCKER_TAG="$GIT_BRANCH-$BOARD"

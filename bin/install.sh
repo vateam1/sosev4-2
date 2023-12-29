@@ -88,7 +88,7 @@ EOF
 
 # Remove these once the above code has been restored.
 export DOCKER_TAG="latest"
-export BRANCH="master"
+export BRANCH="main"
 
   echo && read -p "Do you want this device to manage your network? This is recommended for most users because this adds features to manage your network. (Y/n)" -n 1 -r -s NETWORK && echo
 

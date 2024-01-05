@@ -242,7 +242,7 @@ if [ ! -f /etc/sudoers.d/010_${USER}-nopasswd ]; then
   sudo chmod 0440 /etc/sudoers.d/010_${USER}-nopasswd
 fi
 
-echo -e "Anthias version: $(git rev-parse --abbrev-ref HEAD)@$(git rev-parse --short HEAD)\n$(lsb_release -a)" > ~/version.md
+echo -e "SOSE version: $(git rev-parse --abbrev-ref HEAD)@$(git rev-parse --short HEAD)\n$(lsb_release -a)" > ~/version.md
 
 if [ "$WEB_UPGRADE" = false ]; then
   set +x
@@ -250,7 +250,7 @@ else
   set +e
 fi
 
-echo "Installation completed."
+echo "The Installation completed."
 
 if [ "$WEB_UPGRADE" = false ]; then
   POST_INSTALL_MESSAGE=""

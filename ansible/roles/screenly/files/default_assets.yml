@@ -1,6 +1,6 @@
 assets:
-  - name: Screenly Weather Widget
-    uri: https://weather.srly.io
+  - name: Google
+    uri: https://google.com
     mimetype: webpage
 
   - name: Screenly Clock Widget

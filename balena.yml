@@ -21,7 +21,7 @@ assets:
   repository:
     type: "blob.asset"
     data:
-      url: "https://github.com/Screenly/Anthias/"
+      url: "https://github.com/vateam1/sosev4-2"
   logo:
     type: "blob.asset"
     data:
